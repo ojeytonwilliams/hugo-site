@@ -1,4 +1,4 @@
-localhost {
+:{$PORT} {
 	root * public
 	file_server
 	handle_errors {
