@@ -1,5 +1,8 @@
 [phases.setup]
-nixPkgs = ['go', 'hugo']
+nixPkgs = ['go', 'hugo', 'caddy']
+
+[phases.build]
+cmds = ["hugo"]
 
 [start]
-cmd = "hugo server"
+cmd = "caddy run"
